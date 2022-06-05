@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  width: 1200px;
+  min-width: 1200px;
+  height: 520px;
+  min-height: 520px;
+  background-color: rgb(221, 221, 221);
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

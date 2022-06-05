@@ -1,0 +1,109 @@
+.header {
+  height: 170px;
+}
+.convertor {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+/* arrows */
+
+.arrow1,
+.arrow2 {
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 20px;
+  margin: auto 10px;
+}
+.arrow1 div,
+.arrow2 div {
+  position: relative;
+  top: 20px;
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.2);
+  left: 0;
+  display: block;
+  margin: 0;
+}
+.arrow1 div::after,
+.arrow2 div::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  top: -4px;
+  right: -3px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+.arrow1 div::before,
+.arrow2 div::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  top: 4px;
+  right: -3px;
+  background-color: white;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(-45deg);
+}
+.arrow2 div::after {
+  transform: rotate(-45deg);
+  left: -3px;
+}
+.arrow2 div::before {
+  transform: rotate(45deg);
+  left: -3px;
+}
+.arrows {
+  background-color: #337ab7;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 25px);
+}
+
+/* convertor  */
+
+.inputCurr,
+.outputCurr {
+  background-color: white;
+  width: 50%;
+  color: #276ca8;
+  padding-top: 5%;
+}
+
+.outputCurr {
+  background-color: #276ca8;
+  color: white;
+}
+
+.convertor input,
+.convertor select {
+  box-sizing: border-box;
+  height: 40px;
+  border: 1px solid #276ca8;
+  color: #276ca8;
+  padding-left: 5px;
+}
+
+.convertor select {
+  border-left: 0px !important;
+  background-color: white;
+  width: 60px;
+  color: #276ca8;
+}
+
+.outputCurr input,
+.outputCurr select {
+  color: white;
+  background-color: #276ca8;
+  border: 1px solid white;
+}
